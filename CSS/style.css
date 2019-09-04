@@ -1,0 +1,49 @@
+body{
+	margin: 0px auto;
+}
+
+#header{
+	height: 120px;
+	display: flex;
+	padding-top: 20px;
+	padding-left: 25px;
+
+
+}
+#logo {
+	width: 25%;
+}
+#menu{
+	width: 75%;
+	padding-top: 35px;
+	display: flex;
+	justify-content: center;
+
+}
+
+#main{
+		background-color: pink;
+		height: 300px;
+
+	}
+#footer{
+	background-color: green;
+	height: 120px;
+}
+a{
+	color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: bold;
+    width: 120%;
+	
+}
+a:hover{
+	color: #DABD35FF;
+}
+#main ul{
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
