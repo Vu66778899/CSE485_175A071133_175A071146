@@ -1,0 +1,120 @@
+body{
+    color: #000;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+}
+.container {
+    width: auto !important;
+    max-width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.top-h{
+    background-color: #024282;
+    position: relative;
+    z-index: 100;
+}
+.justify-content-sm-center {
+    justify-content: center !important;
+}
+.d-flex {
+    display: flex !important;
+}
+.top-header .wrapper {
+    width: 75%;
+    padding: 8px 30px 5px 5px;
+}
+.top-header .btn-h-nav {
+    background-color: #024282;
+    color: #fff;
+    border-radius: 0;
+    border: 0;
+    margin: 0 0 0 -15px;
+    position: relative;
+    z-index: 2;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.hl {
+    margin-right: auto !important;
+    display: flex;
+    align-items: center;
+}
+.top-h .hotline {
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 245px;
+}
+.text-md-left {
+    text-align: left !important;
+}
+mb-0 {
+    margin-bottom: 0 !important;
+}
+.top-h .hotline>* {
+    display: inline-block;
+    color: #fdb913;
+    text-transform: uppercase;
+}
+
+.top-h .hotline>ul {
+    position: absolute;
+    left: 65px !important;
+    top: 0;
+    right: 0;
+    height: 22px;
+    margin: 0 !important;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.top-h .hotline>ul>li {
+    position: absolute;
+    height: 22px;
+    width: 100%;
+    line-height: 22px;
+    display: none;
+    margin: 0 !important;
+}
+.top-h .hotline>ul>li {
+    position: absolute;
+    height: 22px;
+    width: 100%;
+    line-height: 22px;
+    display: none;
+    margin: 0 !important;
+}
+.top-h .hotline>ul>li a {
+    color: #fdb913;
+    font-weight: 600;
+}
+.top-h .h-nav {
+    padding-left: 105px;
+}
+.top-h .h-nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+}
+.top-h .h-nav ul li a {
+    color: #fff;
+}
+.top-h .search {
+    background-color: #012b64;
+}
+.top-header .search * {
+    color: #fff;
+}
