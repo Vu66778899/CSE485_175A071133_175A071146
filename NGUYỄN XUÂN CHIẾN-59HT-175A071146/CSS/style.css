@@ -4,6 +4,8 @@ body{
     font-size: 13px;
     line-height: 1.7;
 }
+  
+
 .container {
     width: auto !important;
     max-width: 1200px;
@@ -137,6 +139,61 @@ mb-0 {
 .header .d-flex .w-100 .txt:hover{
     color: #c2b080;
 }
+.gnav {
+    position: relative;
+    z-index: 98;
+}
+.gnav nav * {
+    color: #fff;
+}
+@media (min-width: 1200px)
+{
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+}
+.gnav nav.toggled {
+    background-color: rgba(2,66,130,0.95);
+    bottom: 100%;
+    opacity: 1;
+    filter: none;
+    -webkit-transform: translate3d(0,100%,0);
+    -ms-transform: translate3d(0,100%,0);
+    -o-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+}
+.btn-gnav {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    line-height: 1;
+    margin: 0 0 0 -50px;
+    padding: 0;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 97;
+}
+.btn {
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: all .2s ease-in-out;
+}
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
 .main .title-m{
     height: 120px;
     background-color: rgba(0,0,0,0.45);
@@ -147,6 +204,16 @@ mb-0 {
     align-items: center;
 }
 
+#left-control,#right-control{
+    width: 98%;
+    top: 30%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+    .main .sr-only{
+        font-size: 50px;
+    }
 .m-1 {
     flex: 0 0 75%;
     max-width: 75%;
