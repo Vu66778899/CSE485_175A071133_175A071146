@@ -10,13 +10,11 @@
     <link rel="stylesheet" href="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/bootstrap.min.css">
     <link rel="stylesheet" href="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/style.css">
-    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/JS/jquery-3.4.1.1.min.js"></script>
-    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
-    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/JS/jquery-ui/jquery-ui.js"></script>
-    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/5a84353.css">
+ 
 
 </head>
-<body>
+<body class="sidebar-toggled">
     <header class="top-h">
         <div class="container">
             <div class="d-flex justify-content-sm-center justify-content-sm-end">
@@ -94,14 +92,14 @@
                 </ul>
             </div>
           </div>
-          <button type="button" class="btn btn-gnav" id="menu-trigger" data-trigger="#menu"><i class="fas fa-bars c-blue-a5"></i></button>
+          <button type="button" class="btn btn-gnav" id="menu-trigger" data-trigger="#menu"><a id="showCollapse"><i class="fas fa-bars c-blue-a5"></i></a></button>
         </div>
     </div>
-    <div class="gnav">
+    <div class="gnav" id="menu">
         <div class="container">
-            <nav id="menu" class="toggled">
+            <nav id="menu" class="toggled collapse-handmade" id="collapse-handmade">
                 <div class="row">
-                                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <p><a href="/web/gioi-thieu">Giới thiệu chung</a></p>
                             <ul class="sub-nav">
                               <li><a href="/web/dao-tao/gioi-thieu-chung"><i class="fas fa-angle-double-right"></i>Giới thiệu chung</a></li>
@@ -299,5 +297,30 @@
             </div>
         </div>
     </div>
+    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/JS/jquery-3.4.1.1.min.js"></script>
+    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/JS/jquery-ui/jquery-ui.js"></script>
+    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.showCollapse')
+      })
+      $( document ).ready(function() {
+          $('#showCollapse').click(function(){
+            // $(".collapse-handmade").css("display",'block');
+            $(".collapse-handmade").slideToggle("slow");
+          });
+    
+           $(".center").slick({
+              dots: true,
+              infinite: true,
+              centerMode: true,
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              dots:false
+            });
+      });
+    </script>
 </body>
 </html>
