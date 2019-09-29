@@ -10,31 +10,29 @@
     <link rel="stylesheet" href="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/bootstrap.min.css">
     <link rel="stylesheet" href="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/css/style.css">
-    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/JS/jquery-ui/jquery-ui.js"></script>
-    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/JS/jquery-3.4.1.1.min.js"></script>
-    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
-    <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+  
 </head>
-<body>
+<body class="sidebar-toggled">
     <div class="top-h">
         <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <div class="row">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler" style="border: none !important;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon" style="margin-right: 30px;"></span>
                                 <a class="navbar-brand" href="#">
                                     <form class="form-inline my-2 my-lg-0">
                                         <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm thông tin" aria-label="Search">
                                     </form>
+                                    <img class="md-1" src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/images/icon/ico-flagen.jpg" alt="icon" id="img-icon">
                                   </a>
                               </button>
                               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                   <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active ">
-                                      <a class="nav-link hotline" href="#">HOTLINE:0912.298.300-0914.298.300 <span class="sr-only">(current)</span></a>
+                                      <a class="nav-link hotline"  style="padding-left: 15px;" href="#">HOTLINE:0912.298.300-0914.298.300 <span class="sr-only">(current)</span></a>
                                   </li>
                                       <li class="nav-item active " >
-                                          <a class="nav-link top-nav" >SINH VIÊN<span class="sr-only">(current)</span></a>
+                                          <a class="nav-link top-nav" href="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/gioithieu.html">SINH VIÊN<span class="sr-only">(current)</span></a>
                                       </li>
                                       <li class="nav-item active ">
                                           <a class="nav-link top-nav" >GIẢNG VIÊN <span class="sr-only">(current)</span></a>
@@ -43,11 +41,12 @@
                                           <a class="nav-link top-nav daotao" href="#">ĐÀO TẠO QUỐC TẾ <span class="sr-only">(current)</span></a>
                                         </li>
                                   </ul>
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand nav-img" href="#">
                                 <form class="form-inline my-2 my-lg-0">
                                     <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm thông tin" aria-label="Search">
                                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
                                 </form>
+                                <img src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/images/icon/ico-flagen.jpg" alt="icon" id="img-icon">
                               </a>
                  
                           
@@ -66,7 +65,7 @@
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#"><i class="fas fa-info-circle"></i>Giới thiệu<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/gioithieu.html"><i class="fas fa-info-circle"></i>Giới thiệu<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#"><i class="fas fa-graduation-cap"></i>Tuyển sinh<span class="sr-only">(current)</span></a>
@@ -83,7 +82,78 @@
                   </ul>
                 </div>
               </nav>
+              <button type="button" class="btn btn-gnav" id="menu-trigger" data-trigger="#menu"><a id="showCollapse"><i class="fas fa-bars c-blue-a5"></i></a></button>
         </div>
+
+    </div>
+    <div class="gnav container" id="menu">
+      <div class="container">
+          <nav id="menu" class="toggled collapse-handmade" id="collapse-handmade" style="display: none">
+              <div class="row">
+                      <div class=" col-md-3">
+                          <p><a href="/web/gioi-thieu">Giới thiệu chung</a></p>
+                          <ul class="sub-nav">
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Giới thiệu chung</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Toàn cảnh ĐH Nguyễn Tất Thành</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Sơ đồ bố trí phòng ban</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Thông tin 3 công khai</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Đảm bảo chất lượng</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Phát triển bền vững</a></li>
+                          </ul>
+  
+                          <p><a href="#">Hợp tác doanh nghiệp</a></p>
+                          <ul class="sub-nav">
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Giới thiệu việc làm</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Giới thiệu thực tập</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Câu lạc bộ Doanh nghiệp</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Ban liên lạc Cựu sinh viên</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Liên kết - Hợp tác</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-md-3">
+                          <p><a href="#">Tuyển sinh</a></p>
+                          <ul class="sub-nav">
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Các bậc đào tạo</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Thông tin tuyển sinh</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Chính sách học bổng</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Hướng nghiệp</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Xét tuyển trực tuyến</a></li>
+                          </ul>
+  
+                          <p><a href="#">Nghiên cứu</a></p>
+                          <ul class="sub-nav">
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Hoạt động khoa học công nghệ</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Viện - Trung tâm nghiên cứu</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Công bố khoa học</a></li>
+                            </ul>
+                      </div>
+  
+                      <div class="col-md-3">
+                          <p><a href="/web/dao-tao/">Đào tạo</a></p>
+                          <ul class="sub-nav">
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Khối Khoa học sức khỏe</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Khối Kinh tế - Quản trị</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Khối Kỹ thuật - Công nghệ</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Khối Khoa học xã hội - Nhân văn</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Khối Mỹ thuật - Nghệ thuật</a></li>
+                            <li><a href=""><i class="fas fa-angle-double-right"></i>Khối đào tạo quốc tế</a></li>
+                          </ul>
+                      </div>
+  
+                      <div class="col-md-3">
+                          <ul class="sub-page">
+                              <li><a href="" class="btn"><i class="fas fa-facebook-official sub-1"></i>Facebook</a></li>
+                              <li><a href="" class="btn"><i class="fas fa-google-plus"></i>Google Plus</a></li>
+                              <li><a href="" class="btn"><i class="fas fa-youtube-play"></i>Youtube</a></li>
+                              <li><a href="" class="btn"><i class="fas fa-envelope"></i>E-mail</a></li>
+                              <li><a href="" class="btn"><i class="fas fa-wechat"></i>Zalo</a></li>
+                              <li><a href="" class="btn"><i class="fas fa-mortar-board"></i>E-office</a></li>
+                              <li><a href="" class="btn"><i class="fas fa-users"></i>Tuyển dụng</a></li>
+                          </ul>
+                      </div>
+                </div>
+        </nav>
+      </div>
     </div>
     <div class="main">
       <div class="container">
@@ -144,7 +214,7 @@
                  </div>
           </div>
           <ul class="list-unstyled" style="float: right;font-size: 12px;">
-              <li><a class="c-blue-a5 font-weight-bold" href="#"><i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>Xem thêm</a></li>
+              <li><a class="c-blue-a5 font-weight-bold" href="#"><i class="fas fa-chevron-circle-right mr-2 c-blue-a5"></i>Xem thêm</a></li>
           </ul>
         </div>
         <div class="col-md-3">
@@ -164,12 +234,35 @@
                 </div>
                 </div>
                 <ul class="list-unstyled" style="float: right; font-size: 12px;">
-                    <li><a class="c-blue-a5 font-weight-bold" href="#"><i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>Xem thêm</a></li>
+                    <li><a class="c-blue-a5 font-weight-bold" href="#"><i class="fas fa-chevron-circle-right mr-2 c-blue-a5"></i>Xem thêm</a></li>
                 </ul> 
         </div>
       </div>
         </div>
       </div>
+      <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/JS/jquery-ui/jquery-ui.js"></script>
+      <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/JS/jquery-3.4.1.1.min.js"></script>
+      <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+      <script src="../NGUYỄN XUÂN CHIẾN-59HT-175A071146/CSS/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.showCollapse')
+        })
+        $( document ).ready(function() {
+            $('#showCollapse').click(function(){
+              // $(".collapse-handmade").css("display",'block');
+              $(".collapse-handmade").slideToggle();
+            });
       
+             $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dots:false
+              });
+        });
+      </script>
 </body>
 </html>
