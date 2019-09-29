@@ -225,3 +225,50 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 .list-sub a{
     color: #000;
 }
+.banner{
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    padding: 0px;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+.dr{
+    display: flex;
+    background-color: rgb(44, 108, 173);
+    padding-left: 100px;
+}  
+.cl-1{
+    background-color: #fff !important;
+    color: rgba(44, 108, 173, 0.82);
+}
+.btn{
+    border: 0;
+    border-radius: 0;
+    height: 50px;
+    background-color: rgba(44, 108, 173, 0.82) ;
+}
+.btn:hover{
+    background-color:  rgb(34, 84, 134, 0.82);
+}
+.dr-1{
+    background-color: rgba(44, 108, 173, 0.8);
+    margin: 0;
+    border-radius:0; 
+    padding: 0;
+    border: 0;
+    
+}
+.dr-1 a{
+    color: #fff;
+}
+.dr-1 a:hover{
+    background-color:  rgb(34, 84, 134, 0.82);
+    color: #fff;
+}
