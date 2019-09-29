@@ -190,6 +190,7 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 }
 .head-1{
     padding:24px;
+    background-color: #efece8;
 }
 .cate{
     border-top: 1px solid #d7d7d7;
