@@ -4,16 +4,27 @@ body{
     font-size: 13px;
     line-height: 1.7;
 }
-  
+.b-ground{
+    background-color: rgba(0,0,0,0.45);
+    height: 100px;
+    position: relative;
+    z-index: 2;
+    bottom: 100px;
+    color: #fff;
 
+}
+.b-ground h3{
+   top: 30%;
+   position: relative;
+
+}
 .carousel-control-next,.carousel-control-prev{
     height: 5% !important;
     width: 5% !important;
     position: absolute !important;
     top: 80% !important;
-    z-index: 1 !important;
+    z-index: 5 !important;
 }
-
 .carousel-control-prev{
     position: absolute !important;
     left: 90% !important;

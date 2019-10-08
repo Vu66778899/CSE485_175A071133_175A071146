@@ -90,12 +90,7 @@ body{
 .g-nav {
     background-color: blue ;
 }
- .main .b-ground{
-    background-color: rgba(0,0,0,0.45);
-    height: 100px;
-    position: relative;
-    bottom: 100px;
-}
+
 .carousel-control-next,.carousel-control-prev{
     height: 5% !important;
     width: 5% !important;
