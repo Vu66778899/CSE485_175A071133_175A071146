@@ -305,20 +305,82 @@ img {
 	border-style: none;
 }
 
-.home .footer h4{
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  font-weight: bold;
+footer {
+  background-color: #024282;
+  margin-top: 30px;
+  display: block;
 }
-.home .footer p{
-  margin-bottom: 5px;
-  font-size: 13px;
+.container {
+    width: auto !important;
+    max-width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-.home .footer{
-  padding-top: 10px;
-  padding-bottom: 10px;
+.pb-4 {
+    padding-bottom: 1.5rem !important;
 }
+footer .fnav p {
+    color: #fff;
+    font-size: 18px;
+    margin: 30px 0 15px 0;
+}
+footer .fnav p a {
+    color: #fff;
+}
+footer .fsub {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer .fsub li {
+    color: #a1a1a1;
+    padding: 5px 0 0 0;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+footer .fsub li a {
+    color: #a1a1a1;
+}
+.sub-page {
+    list-style: none;
+    margin: 35px 30px 0 30px;
+    padding: 0;
+}
+.sub-page li {
+    margin-bottom: 5px;
+}
+.sub-page .btn {
+    width: 100%;
+    color: #fff;
+    background-color: #42719f;
+    text-align: left;
+}
+footer .copyright {
+    background-color: #fff;
+    color: #2e313a;
+}
+footer .container {
+    width: auto !important;
+    max-width: 1200px;
+}
+.pb-2 {
+    padding-bottom: .5rem !important;
+}
+footer .copyright p {
+    margin: 0;
+    padding: 15px 0;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
 .home .wrapper_chatbox .chatbox{
   background-color: #0f4f8f;
   width: 400px;
