@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin</title>
+  <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="../Admin/CSS/jquery-ui.css">
+    
+    <link href="../Admin/CSS/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../Admin/CSS/sb-admin.css" rel="stylesheet">
+  
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Morris Charts CSS -->
+    <link href="../Admin/CSS/morris.css" rel="stylesheet">
+     <link href="../css/admin/style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: rgb(138, 131, 74)">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" style="color: #fff">QUẢN TRỊ HỆ THỐNG</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                
+                
+                <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #fff"><i class="fa fa-user"></i> Xin chào:&nbsp;admin <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>                        
+                        <li class="divider"></li>
+                        <li>
+                            <a href="logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+<!-- left -->
+ <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li style="background:rgb(138, 131, 74)c;color:#fff;">
+                        <a href="index.html" style="color:#fff;"><i class="fas fa-reply"></i> Trở về trang chủ</a>
+                    </li>                    
+                    <li>
+                        <a href="add_danhmucbaiviet.html" data-toggle="collapse" data-target="#demo_dm"><i class="fas fa-book-open"></i> Danh mục bài viết</a>
+                        
+                    </li> 
+                    
+                    <li>
+                        <a href="menu.html" data-toggle="collapse" data-target="#demo_bv"><i class="fas fa-bars"></i> Menu </a>
+                      
+                    </li>
+                    <li>
+                        <a href="slide.html" data-toggle="collapse" data-target="#demo_bv"><i class="fas fa-book-open"></i> Slide </a>
+                      
+                    </li>
+                    <li>
+                        <a href="baiviet.html" data-toggle="collapse" data-target="#demo_bv"><i class="far fa-file-alt"></i> Bài viết </a>
+                      
+                    </li>
+                    <li>
+                        <a href="quanlychung.html" data-toggle="collapse" data-target="#demo_bv"><i class="fas fa-users-cog"></i> Quản lý chung </a>
+                      
+                    </li>
+                                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <!-- header -->
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+                
+                
+                 <!-- content -->
+                <div class="row " id="themmoi">
+                    <div class="col-lg-12">
+                        
+                        <form method="post" action="">
+                            <h3 id="result"></h3>
+                            <h2>Thêm nội dung mới</h2>
+                            <select name="" id="select_menu">
+                                <option value="">--Chọn--</option>
+                                <option value="">Danh mục</option>
+                            </select>
+                            <div class="form-group">
+                                <label>Tên bài viết</label>
+                                <input type="text" id="name"  placeholder="Tên bài viết" class="form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <label>Số thứ tự</label>
+                                <input type="text" id="order" placeholder="Số thứ tự" class="form-control" value="">
+                            </div>
+                            
+                            <input type="button" class="btn" onclick="add_menu()" value="Thêm mới" data-toggle="modal" data-target="#exampleModal">
+                        </form>
+                        <!-- Button trigger modal -->
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+               
+               <div class="row" style="margin-top: 2rem;">
+                    <div class="col-lg-12">
+                    <a href=""  onclick="showdanhsach()"><h4 style="color: #222;float: left;text-decoration: underline;">Danh sách</h4><i style="color: #222;padding-top: 1rem;" class="fa fa-fw fa-caret-down"></i>
+                    
+                    </a>
+                    </div>
+                </div>
+                
+                <div class="row " id="danhsach" style="display: none">
+                    <div class="col-lg-12">
+                        <table class="table table-hover" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <td>Id</td>
+                                    <td>Tên bài viết</td>
+                                    <td>Số thứ tự</td>
+                                    <td>xóa</td>
+                                </tr>
+                            </thead>
+                            <tbody id="noidung">
+                                 
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+               
+                <div id="dialog" title="Bạn đã thêm bài viết mới thành công" style="display: none;">
+                  <p id="content_dialog" style=""></p>
+                </div>
+               
+                
+                <!-- /content -->
+                <!-- /.row -->
+               
+                    
+                
+                
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+        
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../Admin/JS/jquery-3.3.1.min.js"></script>
+  <script src="../Admin/JS/1.12.1/jquery-ui.js"></script>
+  <script src="../Admin/JS/bootstrap.min.js"></script>
+   <script src="../Admin/JS/admin.js"></script>
+   <script src="../Admin/JS/more.js"></script>     
+    <script>
+        function add_menu(){
+            var name =$('#name').val();
+            var order =$('#order').val();
+            var number=/^[0-9]+$/;
+            if (!name=="") {
+                    if (!order=="") {
+                        if (number.test(order)==true) {
+                            
+                            $( "#content_dialog" ).html( "<h4>Tên bài viết: "+name+"<br>"+"Số thứ tự: "+order+"</h4>" ); 
+                            $( function() {
+                            $( "#dialog" ).dialog();
+                             } );
+                            
+                            
+                                $('#noidung').append('<tr id="xoa_'+i+'"><td>'+i+'</td><td>'+name+'</td><td>'+order+'</td><td><span id="hihi" onclick="test_'+i+'()"><a   href="#"><i  class="fa fa-trash" style="font-size: 2rem;color: red;" aria-hidden="true"></i></a></span></td><tr>');
+                                i++;
+                               
+                            
+                            $('#name').val('');
+                            $('#order').val('');
+                            $( "#danhsach" ).slideUp( 300 ).delay( 700 ).fadeIn( 1000 );
+                            $('#hienthem').show();
+                            
+                        }else{
+                            alert('Thứ tự phải là số');
+                        }
+                    }else{
+                        alert('Bạn chưa nhập thứ tự');
+                    }
+                
+            }else{
+               
+                alert('Bạn chưa nhập tên Menu');
+                
+            }
+            
+            
+        }
+    </script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+.name{
+    font-size: 10px;
+	width: 30%;
+	margin: 30px auto 0px;
+	color: white;
+	text-align: center;
+    border-bottom: none;
+    padding: 0px 20px 0 20px;
+    border-radius: 5px;
+}
+p{
+    margin-top: 0px;
+}
+form{
+	width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+	border: 1px solid rgb(138, 131, 74);
+    background:white;
+    border-radius: 10px;
+}
+.input-group
+{
+	margin: 10px auto;
+
+}
+.input-group .fas{
+    padding-left: 20%;
+    color: rgb(138, 131, 74);
+}
+.input-group input{
+    height: 30px;
+    width: 50%;
+    margin-left: 10px;
+    padding: 5px 10px;
+    padding-left: 10px;
+	font-size: 20px; 
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+input[type="checkbox"]{  
+    margin-left: 68%;
+}
+
+.input-group button{
+    width: 150px;
+    border-radius: 5px;
+    margin-left: 40%;
+    font-size: 20px;
+    background-color: rgb(138, 131, 74);
+    color: white;
+    border: none;
+}
+.btn{
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	background: #5F9EA0;
+	border: none;
+	border-radius: 5px;
+}
+.error{
+	width: 92%;
+	margin: 0px auto;
+	padding: 10px;
+	border: 1px solid $a94442;
+	color: #a94442;
+	background: #f2dede;
+	border-radius: 5px;
+	text-align: left;
+}
+.success{
+	color: #3c763d;
+	background: #dff0d8;
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+	width: 30%;
+}
+.alert-danger{
+	padding: 0.5rem;
+	color: white;
+	background-color: rgb(138, 131, 74);
+	display: flex;
+	justify-content: center;
+	border-radius: 20px;
+    display: none;
+    text-align: center;
+}

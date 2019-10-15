@@ -1,0 +1,48 @@
+body {
+    font-family: Arial !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width: 992px)
+*{
+}
+@media only screen and (max-width: 1200px)
+* {
+}
+.tin-chi-tiet h2 {
+    font-size: 14pt;
+    font-weight: 600;
+    text-align: justify;
+    margin: 1.5% 0 0.5% 0;
+    line-height: 22px;
+    color: #007398;
+}
+
+h2 {
+    font-size: 18px !important;
+}
+.tin-chi-tiet .box-view i {
+    font-style: normal;
+    font-size: 10pt;
+    color: #aaa9a9;
+}
+.tin-chi-tiet .box-view span.fa, .gioi-thieu .ban-tin-hvnh .gioi-thieu-nd .box-view span.fa {
+    color: #1C9AD6;
+}
+.tin-chi-tiet p, .gioi-thieu .ban-tin-hvnh .gioi-thieu-nd p {
+    font-size: 8pt;
+    margin: 0% 0 0% 0;
+}
+p {
+    line-height: 20px;
+    font-family: Arial;
+}
+.tin-chi-tiet td img {
+    width: 100% !important;
+    height: auto !important;
+}
+.tin-chi-tiet img {
+    padding: 0px !important;
+}
